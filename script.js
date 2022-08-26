@@ -233,11 +233,11 @@ b8 = document.getElementById("b8")
     },{once:true},false)
 
 
-function gameReset(){
-    board=[]
-    roundCount=0
-    document.querySelectorAll(".box").forEach(element => {
-        element.textContent=("")
-    });
-    document.getElementsByClassName("playerwon")[0].style.visibility = "hidden"
-}
+// function gameReset(){
+//     board=[]
+//     roundCount=0
+//     document.querySelectorAll(".box").forEach(element => {
+//         element.textContent=("")
+//     });
+//     document.getElementsByClassName("playerwon")[0].style.visibility = "hidden"
+// }
