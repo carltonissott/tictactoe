@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"defer></script>
+</head>
+<body>
+    <div class="playerwon">
+        <div  class="infocard">
+            <h1 id="winstatus"></h1>
+            <button onclick="gameReset()" class="buttonPlay">PLAY AGAIN</button>
+        </div>
+    </div>
+    <div class="playeroptions">
+        <h1>Tic-Tac-Toe</h1>
+        <div class="player1">
+            <h3>Player 1:</h3>
+            <label for="player1name">First Name:</label>
+            <input id="player1name"type="text">
+            <br>
+            <label for="p1X">X</label>
+            <input type="radio" name="p1marker" id="p1X" value="x">
+            <label for="p1O">O</label>
+            <input type="radio" name="p1marker" id="p1O" value="o">
+        </div>
+        <div class="player2">
+            <h3>Player 2:</h3>
+            <label for="player2name">First Name:</label>
+            <input id="player2name" type="text">
+            <br>
+            <label for="p2x">X</label>
+            <input type="radio" name="p2marker" id="p2X" value="x">
+            <label for="p2O">O</label>
+            <input type="radio" name="p2marker" id="p2O" value="o">
+        </div>
+        <br>
+        <button id="letsplay" onclick="playerInformation()" class="buttonPlay">Let's Play!</button>
+
+    </div>
+    <div class="ingame">
+        <h3 id="gamestatus"></h3>
+    </div>
+    <div class="main">
+        <div class="gamegrid">
+            <div id="b0" class="box"></div>
+            <div id="b1" class="box"></div>
+            <div id="b2" class="box"></div>
+            <div id="b3" class="box"></div>
+            <div id="b4" class="box"></div>
+            <div id="b5" class="box"></div>
+            <div id="b6" class="box"></div>
+            <div id="b7" class="box"></div>
+            <div id="b8" class="box"></div>
+        </div>
+    </div>
+</body>
+</html>
